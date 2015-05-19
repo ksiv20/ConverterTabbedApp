@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController {
+    UITextField *distanceTextBox;
+    UILabel *convertedResult;
+}
 
+@property (nonatomic, retain) IBOutlet UILabel *convertedResult;
+@property (nonatomic, retain) IBOutlet UITextField *distanceTextBox;
+
+- (IBAction)distanceConverter:(id)sender;
+- (IBAction)backgroundTouchedHideKeyboard:(id)sender;
 
 @end
 

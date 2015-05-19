@@ -52,7 +52,9 @@
     calculatedResult.text = convertedResult;
 }
 
-// hides keyboard when user touches any part of the background
+/*
+ * Hides keyboard when user touches any part of the background
+ */
 - (void)backgroundTouchedHideKeyboard:(id)sender {
     [temperatureTextBox resignFirstResponder];
 }
