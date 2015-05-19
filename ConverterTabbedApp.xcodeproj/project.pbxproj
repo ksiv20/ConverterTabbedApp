@@ -15,6 +15,8 @@
 		E224B5191B0AE8F7005C9ED8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E224B5181B0AE8F7005C9ED8 /* Images.xcassets */; };
 		E224B51C1B0AE8F7005C9ED8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E224B51A1B0AE8F7005C9ED8 /* LaunchScreen.xib */; };
 		E224B5281B0AE8F7005C9ED8 /* ConverterTabbedAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E224B5271B0AE8F7005C9ED8 /* ConverterTabbedAppTests.m */; };
+		E224B5371B0AF2A9005C9ED8 /* marker_filled_30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = E224B5351B0AF2A9005C9ED8 /* marker_filled_30x30.png */; };
+		E224B5381B0AF2A9005C9ED8 /* sun_filled_30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = E224B5361B0AF2A9005C9ED8 /* sun_filled_30x30.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		E224B5211B0AE8F7005C9ED8 /* ConverterTabbedAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConverterTabbedAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E224B5261B0AE8F7005C9ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E224B5271B0AE8F7005C9ED8 /* ConverterTabbedAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConverterTabbedAppTests.m; sourceTree = "<group>"; };
+		E224B5351B0AF2A9005C9ED8 /* marker_filled_30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = marker_filled_30x30.png; path = ../marker_filled_30x30.png; sourceTree = "<group>"; };
+		E224B5361B0AF2A9005C9ED8 /* sun_filled_30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sun_filled_30x30.png; path = ../sun_filled_30x30.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		E224B5071B0AE8F7005C9ED8 /* ConverterTabbedApp */ = {
 			isa = PBXGroup;
 			children = (
+				E224B5351B0AF2A9005C9ED8 /* marker_filled_30x30.png */,
+				E224B5361B0AF2A9005C9ED8 /* sun_filled_30x30.png */,
 				E224B50C1B0AE8F7005C9ED8 /* AppDelegate.h */,
 				E224B50D1B0AE8F7005C9ED8 /* AppDelegate.m */,
 				E224B50F1B0AE8F7005C9ED8 /* FirstViewController.h */,
@@ -206,7 +212,9 @@
 			files = (
 				E224B5171B0AE8F7005C9ED8 /* Main.storyboard in Resources */,
 				E224B51C1B0AE8F7005C9ED8 /* LaunchScreen.xib in Resources */,
+				E224B5371B0AF2A9005C9ED8 /* marker_filled_30x30.png in Resources */,
 				E224B5191B0AE8F7005C9ED8 /* Images.xcassets in Resources */,
+				E224B5381B0AF2A9005C9ED8 /* sun_filled_30x30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,9 +361,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ConverterTabbedApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -363,9 +374,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ConverterTabbedApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

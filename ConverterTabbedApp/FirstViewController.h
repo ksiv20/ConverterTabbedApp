@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController {
+    UITextField *temperatureTextBox;
+    UILabel *calculatedResult;
+}
 
+@property (nonatomic, retain) IBOutlet UILabel *calculatedResult;
+@property (nonatomic, retain) IBOutlet UITextField *temperatureTextBox;
+
+// takes value from text field and converts deg F -> deg C
+- (IBAction)degreeConverter:(id)sender;
+// hides keyboard when user touches any part of the background
+- (IBAction)backgroundTouchedHideKeyboard:(id)sender;
 
 @end
 
